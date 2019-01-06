@@ -102,12 +102,15 @@ body {
     margin-right: 1.5rem;
 }
 .carousel-link .active {
-	font-weight: bold;
+	font-weight: 600;
 }
 .carousel-conent {
 	font-family: 'Andale-Mono';
 	border: 1px solid #ffffff;
     border-radius: 8px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 .carousel-conent:after {
     position: absolute;
@@ -127,6 +130,15 @@ body {
     height: 6px;
     width: 6px;
     border-radius: 25px;
+}
+.icon-col {
+    padding: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 3rem;
+}
+.icon-col h3 {
+    margin-top: 2rem;
 }
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
