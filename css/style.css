@@ -80,7 +80,7 @@ body {
   	z-index: 10;
 }
 .section-2:after {
-  transform: skewY(-8deg);
+  transform: skewY(-7deg);
   transform-origin: 100% 0;
   background: #A777E3;
   content: '';
@@ -131,6 +131,10 @@ body {
     width: 6px;
     border-radius: 25px;
 }
+.promise-section {
+    z-index: 10;
+    position: relative;
+}
 .icon-col {
     padding: 1rem;
     margin-left: 1rem;
@@ -140,6 +144,181 @@ body {
 .icon-col h3 {
     margin-top: 2rem;
 }
+.dancing-dude {
+	background: url(../img/dancing-dude.png);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative; 
+}
+.dancing-dude:before {
+  transform: skewY(7deg);
+  transform-origin: 100% 0;
+  background: #ffffff;
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  height: 24vh;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+}
+.our-team {
+    background-image: linear-gradient(-180deg, rgba(143,129,237,0.00) 23%, #8F81ED 40%);
+    min-height: 175vh;
+    margin-top: -70vh;
+    z-index: 999;
+    position: relative;
+    padding-top: 70vh;
+}
+.founders {
+    margin-top: 4rem;
+}
+.founders-img {
+    width: 85%;
+}
+.founders-img.active {
+    width: 95%;
+}
+.founder-conent {
+	border: 1px solid #ffffff;
+    border-radius: 8px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    position: relative;
+    margin-top: 3rem;
+    color: #fff;
+}
+.founder-conent:after {
+    position: absolute;
+    content: '';
+    top: -40px;
+    left: 50%;
+    background: #fff;
+    height: 40px;
+    width: 1px;
+}
+.founder-conent:before {
+    position: absolute;
+    content: '';
+    top: -42px;
+    left: 49.6%;
+    background: #fff;
+    height: 6px;
+    width: 6px;
+    border-radius: 25px;
+}
+.social-icon {
+    display: inline-block;
+    margin-left: 1rem;
+}
+.social-icon img {
+    max-width: 24px;
+    margin-top: -5px;
+}
+.founder-tabs li a {
+    color: #D8D8D8;
+    padding-left: 0;
+    padding-right: 16px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.founder-tabs li a:hover {
+	color: #ffffff;
+}
+.founder-tabs li a.active {
+    color: #ffffff;
+}
+.founder-tabs li a:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: width .3s;
+}
+.founder-tabs li a:hover::after, .founder-tabs li a.active:after {
+    width: 100%;
+}
+.our-mascot {
+	background: ;
+}
+.our-mascot h1 {
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);	
+}
+.our-mascot p {
+    font-size: 1.7em;
+    font-weight: 500;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.75);
+}
+.contact-top {
+	background: url(../img/contact-img-bg.png);
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center;
+	position: relative; 
+}
+.contact-bottom{
+	background-image: linear-gradient(0deg, #8F81ED 41%, rgba(143,129,237,0.00) 79%);
+    min-height: 150vh;
+    margin-top: -100vh;
+    z-index: 999;
+    position: relative;
+    padding-top: 95vh;
+}
+.white-outline {
+    background: transparent;
+    color: #ffffff;
+    border-color: #ffffff;
+    padding: .8em 2em;
+    font-size: 1.2em;
+}
+.white-outline:hover {
+    background: #ffffff;
+    color: #8F81ED;
+    border-color: #8F81ED;
+}
+.form-control {
+    padding: 1.5rem 1rem;
+}
+.form-control:focus {
+	border-color: #8F81ED;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,.25);
+}
+footer {
+    background: #3F3F3F;
+    color: #ffffff;
+}
+footer a {
+    color: #ffffff;
+}
+.footer-social li {
+	display: inline-block;
+	list-style: none;
+}
+.footer-social li a {
+    display: block;
+    font-size: 1.8em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 3px solid #fff;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 1.9em;
+}
+.footer-social li a:hover {
+	background: #ffffff;
+	color: #3F3F3F;
+}
+.copyright {
+	font-size: 1.5em;
+}
+
 /* 
   ##Device = Low Resolution Tablets, Mobiles (Landscape)
   ##Screen = B/w 481px to 767px
