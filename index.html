@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
 
 
     <title>JukeStrat</title>
@@ -41,19 +43,35 @@
 
         <ul class="nav justify-content-center carousel-link">
           <li class="nav-item">
-            <a class="nav-link">Juke</a>
+            <a href="#" class="nav-link carousel-a" data-slide="1">Juke</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active">JukeStart</a>
+            <a href="#" class="nav-link carousel-a active" data-slide="2">JukeStart</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Strat</a>
+            <a href="#" class="nav-link carousel-a" data-slide="3">Strat</a>
           </li>
         </ul>
         
         <div class="row carousel mt-4 mb-4">
           <div class="carousel-conent px-5 py-3">
-            <p class="mb-0">[jookstraht]</p>
+            <p class="mb-0">[jookstraht]-1</p>
+            <p class="mb-0">(noun)</p>
+            <p>Employed: By forward-looking companies, universities and countries.</p>
+            <p>1. A skillful and unexpected move that gives you an unassailable advantage over the competition.</p>
+            <p>2. JukeStrat advises high growth companies, prominent universities, and international governments on how to build and benefit from a robust game industry, game education system, and esports infrastructure; all powered by the strategic use of game mechanics.
+            </p>
+          </div>
+          <div class="carousel-conent slick-active px-5 py-3">
+            <p class="mb-0">[jookstraht]-2</p>
+            <p class="mb-0">(noun)</p>
+            <p>Employed: By forward-looking companies, universities and countries.</p>
+            <p>1. A skillful and unexpected move that gives you an unassailable advantage over the competition.</p>
+            <p>2. JukeStrat advises high growth companies, prominent universities, and international governments on how to build and benefit from a robust game industry, game education system, and esports infrastructure; all powered by the strategic use of game mechanics.
+            </p>
+          </div>
+          <div class="carousel-conent px-5 py-3">
+            <p class="mb-0">[jookstraht]-3</p>
             <p class="mb-0">(noun)</p>
             <p>Employed: By forward-looking companies, universities and countries.</p>
             <p>1. A skillful and unexpected move that gives you an unassailable advantage over the competition.</p>
@@ -122,17 +140,37 @@
         <h1 class="text-center text-light fw-600">Our Founders</h1>
         <div class="row founders justify-content-start">
           <div class="col-4 text-center">
-            <a href="#"><img class="founders-img" src="img/David.png"/></a>
+            <a class="team" data-slide="1"><img class="founders-img" src="img/David.png"/></a>
           </div>
           <div class="col-4 text-center">
-            <a href="#"><img class="founders-img active" src="img/Christie.png"/></a>
+            <a class="team" data-slide="2"><img class="founders-img active" src="img/Christie.png"/></a>
           </div>
           <div class="col-4 text-center">
-            <a href="#"><img class="founders-img" src="img/Glenn.png"/></a>
+            <a class="team" data-slide="3"><img class="founders-img" src="img/Glenn.png"/></a>
           </div>
         </div>
         <div class="row founder-carousel mt-4 mb-4">
-          <div class="founder-conent px-5 py-3">
+          <div class="founder-conent david px-5 py-3">
+            <h5>David <a class="social-icon"><img src="img/square-linkedin-icon.png"/></a></h5>
+            <ul class="nav founder-tabs" id="founder-tabs-christie" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" id="bio-tab" data-toggle="tab" href="#bio" role="tab" aria-controls="bio" aria-selected="true">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="irl-tab" data-toggle="tab" href="#irl" role="tab" aria-controls="irl" aria-selected="false">IRL</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="founder-tabs-content-christie">
+              <div class="tab-pane fade" id="bio" role="tabpanel" aria-labelledby="bio-tab">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="tab-pane fade show active" id="irl" role="tabpanel" aria-labelledby="irl-tab">
+                <p>Christie is happiest when writing. She pursues her interests in race, gender and class through writing which blends critical race theory, gender studies, sound studies, and popular culture studies. You can read some of Christie’s writing about race and sound here. </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="founder-conent christie px-5 py-3">
             <h5>Christie Zwahlen <a class="social-icon"><img src="img/square-linkedin-icon.png"/></a></h5>
             <ul class="nav founder-tabs" id="founder-tabs-christie" role="tablist">
               <li class="nav-item">
@@ -151,6 +189,27 @@
               </div>
             </div>
           </div>
+
+          <div class="founder-conent glenn px-5 py-3">
+            <h5>Glenn <a class="social-icon"><img src="img/square-linkedin-icon.png"/></a></h5>
+            <ul class="nav founder-tabs" id="founder-tabs-christie" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link" id="bio-tab" data-toggle="tab" href="#bio" role="tab" aria-controls="bio" aria-selected="true">Bio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="irl-tab" data-toggle="tab" href="#irl" role="tab" aria-controls="irl" aria-selected="false">IRL</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="founder-tabs-content-christie">
+              <div class="tab-pane fade" id="bio" role="tabpanel" aria-labelledby="bio-tab">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+              <div class="tab-pane fade show active" id="irl" role="tabpanel" aria-labelledby="irl-tab">
+                <p>Christie is happiest when writing. She pursues her interests in race, gender and class through writing which blends critical race theory, gender studies, sound studies, and popular culture studies. You can read some of Christie’s writing about race and sound here. </p>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -243,5 +302,60 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <!-- Animations -->
+    <script>
+      ScrollReveal().reveal('.carousel-link', { delay: 200 })
+      ScrollReveal().reveal('.carousel', { delay: 500 })
+      ScrollReveal().reveal('.promise-section', { delay: 500 })
+      ScrollReveal().reveal('.our-team', { delay: 500 })
+      ScrollReveal().reveal('.our-mascot', { delay: 500 })
+      ScrollReveal().reveal('.contact-bottom', { delay: 500 })
+    </script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.carousel').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          cssEase: 'linear',
+          speed: 500,
+          fade: false,
+          arrows: false,
+          initialSlide: 1
+        });
+        $('.carousel-a[data-slide]').click(function (e) {
+          e.preventDefault();
+          var slideno = $(this).data('slide');
+          $('.carousel').slick('slickGoTo', slideno - 1);
+           });
+        $('.founder-carousel').slick({
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: false,
+          cssEase: 'linear',
+          speed: 500,
+          fade: true,
+          arrows: false,
+          initialSlide: 1
+        });
+        $('.team[data-slide]').click(function(e) {
+           e.preventDefault();
+           var slideno = $(this).data('slide');
+           $('.founder-carousel').slick('slickGoTo', slideno - 1);
+         });
+        
+        $('.carousel-a').on('click', function(){
+          $('.carousel-a.active').removeClass('active');
+          $(this).addClass('active');
+        });
+        $('.founders-img').on('click', function(){
+          $('.founders-img.active').removeClass('active');
+          $(this).addClass('active');
+        });
+
+      });
+    </script>
   </body>
 </html>

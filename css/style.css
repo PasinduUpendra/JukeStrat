@@ -39,7 +39,7 @@ body {
     margin-top: 38vh;
 }
 .hero-text h1 {
-    font-size: 3.5em;
+    font-size: 3.5sem;
     letter-spacing: 1.2px;
 }
 .hero-text h4 {
@@ -95,11 +95,15 @@ body {
 .carousel-link {
     font-size: 2em;
     font-weight: 400;
-    letter-spacing: .5px;
+    letter-spacing: .5spx;
 }
 .carousel-link li {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1.5srem;
+    margin-right: 1.5srem;
+}
+.carousel-link li a {
+	color: #ffffff;
+	position: relative;
 }
 .carousel-link .active {
 	font-weight: 600;
@@ -111,21 +115,30 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    margin: 0 5px;
+    visibility: hidden;
+   	opacity: 0;
+  	transition: all .5ss;
 }
-.carousel-conent:after {
+.carousel-conent.slick-active {
+	visibility: visible;
+	opacity: 1;
+  	transition: all .5ss;
+}
+.juke.active:after, .jukestrat.active:after, .strat.active:after {
     position: absolute;
     content: '';
-    top: -25px;
+    top: 64px;
     left: 50%;
     background: #fff;
     height: 25px;
     width: 1px;
 }
-.carousel-conent:before {
+.juke.active:before, .jukestrat.active:before, .strat.active:before {
     position: absolute;
     content: '';
-    top: -28px;
-    left: 49.6%;
+    top: 58px;
+    left: 49%;
     background: #fff;
     height: 6px;
     width: 6px;
@@ -177,9 +190,17 @@ body {
 }
 .founders-img {
     width: 85%;
+    -webkit-transition: width .5ss ease-in-out;
+    -moz-transition: width .5s ease-in-out;
+    -o-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
 }
 .founders-img.active {
     width: 95%;
+    -webkit-transition: width .5s ease-in-out;
+    -moz-transition: width .5s ease-in-out;
+    -o-transition: width .5s ease-in-out;
+    transition: width .5s ease-in-out;
 }
 .founder-conent {
 	border: 1px solid #ffffff;
@@ -191,7 +212,7 @@ body {
     margin-top: 3rem;
     color: #fff;
 }
-.founder-conent:after {
+.christie:after {
     position: absolute;
     content: '';
     top: -40px;
@@ -200,11 +221,49 @@ body {
     height: 40px;
     width: 1px;
 }
-.founder-conent:before {
+.christie:before {
     position: absolute;
     content: '';
     top: -42px;
     left: 49.6%;
+    background: #fff;
+    height: 6px;
+    width: 6px;
+    border-radius: 25px;
+}
+.david:after {
+    position: absolute;
+    content: '';
+    top: -40px;
+    left: 16.4%;
+    background: #fff;
+    height: 40px;
+    width: 1px;
+}
+.david:before {
+    position: absolute;
+    content: '';
+    top: -42px;
+    left: 16%;
+    background: #fff;
+    height: 6px;
+    width: 6px;
+    border-radius: 25px;
+}
+.glenn:after {
+    position: absolute;
+    content: '';
+    top: -40px;
+    left: 83.3%;
+    background: #fff;
+    height: 40px;
+    width: 1px;
+}
+.glenn:before {
+    position: absolute;
+    content: '';
+    top: -42px;
+    left: 83%;
     background: #fff;
     height: 6px;
     width: 6px;
@@ -281,7 +340,7 @@ body {
     border-color: #8F81ED;
 }
 .form-control {
-    padding: 1.5rem 1rem;
+    padding: 1.5srem 1rem;
 }
 .form-control:focus {
 	border-color: #8F81ED;
@@ -316,7 +375,7 @@ footer a {
 	color: #3F3F3F;
 }
 .copyright {
-	font-size: 1.5em;
+	font-size: 1.5sem;
 }
 
 /* 
@@ -336,7 +395,7 @@ footer a {
 
 @media (min-width: 320px) and (max-width: 480px) {
 	.hero-text h1 {
-    	font-size: 2.5em;
+    	font-size: 2.5sem;
     }
     .hero-text h4 {
     	font-size: 1.07em;
@@ -347,5 +406,15 @@ footer a {
 	.navbar-brand {
     	text-align: center;
     	margin: 0 auto;
+	}
+	.footer-social li a {
+	    font-size: 1em;
+	    margin-left: 0rem;
+	    margin-right: 1rem;
+	    border: 1px solid #fff;
+	    width: 2rem;
+	    height: 2rem;
+	    border-radius: 100%;
+	    line-height: 1.9em;
 	}
 }
