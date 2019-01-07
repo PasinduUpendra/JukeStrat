@@ -9,7 +9,9 @@ $(function () {
 
     // when the form is submitted
     $('#contact-form').on('submit', function (e) {
-
+        $('.msg-result').addClass("show").delay(5000).queue(function(){
+                $(this).removeClass("show").dequeue();
+            });
         // if the validator does not prevent form submit
         if (!e.isDefaultPrevented()) {
             var url = "contact.php";
