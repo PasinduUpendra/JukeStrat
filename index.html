@@ -252,20 +252,24 @@
     <div class="row contact-bottom justify-content-center pb-5">
       <div class="col-sm-12 col-md-6 col-lg-6 text-center">
         <h1 class="text-center text-light fw-600 mt-4 mb-5">Contact Us</h1>
-        <form>
+        <form id="contact-form" method="post" action="contact.php" role="form">
           <div class="row">
             <div class="col-md-6 form-group">
-              <input type="text" class="form-control" placeholder="First name*">
+              <input type="text" class="form-control" id="form-first-name" name="first_name" placeholder="First name*" required="required" data-error="Firstname is required.">
+              <div class="help-block with-errors"></div>
             </div>
             <div class="col-md-6 form-group">
-              <input type="text" class="form-control" placeholder="Last name*">
+              <input type="text" class="form-control" id="form-last-name" name="last_name" placeholder="Last name*" required="required" data-error="Lastname is required.">
+              <div class="help-block with-errors"></div>
             </div>
           </div>
           <div class="form-group">
-              <input type="email" class="form-control" id="input-email" placeholder="Email Address*">
+              <input type="email" class="form-control" id="form-email" name="email" placeholder="Email Address*" required="required" data-error="Valid email is required.">
+              <div class="help-block with-errors"></div>
           </div>
           <div class="form-group">
-            <textarea class="form-control" id="input-message" rows="5" placeholder="Message*"></textarea>
+            <textarea class="form-control" id="form-message" rows="5" name="message" placeholder="Message*" required="required" data-error="Please, type your message."></textarea>
+            <div class="help-block with-errors"></div>
           </div>
           <button type="submit" class="btn btn-primary white-outline">SUBMIT</button>
         </form>
@@ -303,6 +307,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
     <!-- Animations -->
     <script>
       ScrollReveal().reveal('.carousel-link', { delay: 200 })

@@ -407,6 +407,9 @@ footer a {
     	text-align: center;
     	margin: 0 auto;
 	}
+	.carousel-link {
+    	font-size: 1.4em;
+    }
 	.footer-social li a {
 	    font-size: 1em;
 	    margin-left: 0rem;
