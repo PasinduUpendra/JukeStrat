@@ -26,6 +26,38 @@ body {
 }
 
 /* Custom CSS */
+.navbar.navbar-light.bg-transparent {
+	padding: 2rem 2rem 1rem 2rem;
+	-webkit-transition:padding 0.5s ease-in-out;
+  	-moz-transition:padding 0.5s ease-in-out;  
+  	-o-transition:padding 0.5s ease-in-out;         
+  	transition:padding 0.5s ease-in-out; 
+}
+.fixed-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99999;
+}
+.affix {
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+  -webkit-transition:padding 0.5s ease-in-out;
+  -moz-transition:padding 0.5s ease-in-out;  
+  -o-transition:padding 0.5s ease-in-out;         
+  transition:padding 0.5s ease-in-out; 
+  background: rgba(255,255,255,.87) !important;
+  z-index: 999999; 
+  position: fixed;
+}
+.affix .nav-link {
+	color: #000000 !important;
+	transition: all .3s;
+}
+.navbar .navbar-brand img {
+    max-width: 220px;
+}
 .hero-section {
 	background: url(../img/hero-img.png);
 	min-height: 125vh;
@@ -188,17 +220,17 @@ body {
 }
 .founders-img {
     width: 85%;
-    -webkit-transition: width .5s ease-in-out;
-    -moz-transition: width .5s ease-in-out;
-    -o-transition: width .5s ease-in-out;
-    transition: width .5s ease-in-out;
+    -webkit-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+    -o-transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
 }
 .founders-img.active {
     width: 95%;
-    -webkit-transition: width .5s ease-in-out;
-    -moz-transition: width .5s ease-in-out;
-    -o-transition: width .5s ease-in-out;
-    transition: width .5s ease-in-out;
+    -webkit-transition: width .2s ease-in-out;
+    -moz-transition: width .2s ease-in-out;
+    -o-transition: width .2s ease-in-out;
+    transition: width .2s ease-in-out;
 }
 .founder-conent {
 	border: 1px solid #ffffff;
@@ -218,7 +250,7 @@ body {
     position: absolute;
     content: '';
     top: -40px;
-    left: 48.9%;
+    left: 49.5%;
     height: 40px;
     width: 8px;
     background: url(../img/line.png);
@@ -308,7 +340,7 @@ body {
 }
 .contact-top {
 	background: url(../img/contact-img-bg.png);
-	min-height: 100vh;
+	min-height: 110vh;
 	background-size: cover;
 	background-position: center;
 	position: relative; 
@@ -458,7 +490,7 @@ footer a {
 	    width: 14px;
 	}
 	.founders-img {
-	    width: 95	%;
+	    width: 95%;
 	}
 	.founders-img.active {
    		width: 100%;
